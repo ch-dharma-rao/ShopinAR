@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- ***************    Welcome Activity    *************** -->
+    <!-- colors for button style -->
+    <color name="blue_start">#4c84ff</color>
+    <color name="blue_end">#18a3fe</color>
+    <color name="blue_light">#4FC3F7</color>
+    <color name="blue_dark">#03A9F4</color>
+
+    <!-- Colors for tab and screen text -->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+
+
+    <!-- ***************    Login and Register Activity    *************** -->
+    <!-- Login and Register Screen colors-->
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#603999</color>
+    <color name="themeColor">#5447A6</color>
+
+    <!-- Normal colors-->
+    <color name="darkTextColor">#020000</color>
+
+    <!--colors for light mode-->
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#5447A6</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#5447A6</color>
+
+    <!--colors for tap target view-->
+    <color name="first">#3498db</color>
+    <color name="second">#9b59b6</color>
+    <color name="third">#e74c3c</color>
+    <color name="fourth">#e67e22</color>
+
+    <color name="price">#ff1744</color>
+
+    <color name="category_card_bg">#e67e22</color>
+<!--    <color name="category_card_bg">#603999</color>-->
+
+
+    <color name="prouctDetailColorPrimary">#1e272e</color>
+    <color name="prouctDetailColorPrimaryDark">#ffa801</color>
+    <color name="prouctDetailColorAccent">#FF4081</color>
+
+
+<!--    Profile Activity-->
+
+<!--    <color name="gen_black">#000000</color>-->
+<!--    <color name="gen_white">#FFFFFF</color>-->
+<!--    <color name="green_light">#43A047</color>-->
+    <color name="grey_light">#E0E0E0</color>
+
+    <color name="textColor">#060606</color>
+    <color name="white">#ffffff</color>
+    <color name="orange">#FA6B1B</color>
+
+
+    <color name="product_name">#332CED</color>
+    <color name="product_price">#D72F39</color>
+    <color name="product_cutted_price">#272628</color>
+
+
+    <color name="activty_background">#EDF4FE</color>
+
+</resources>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/whiteTextColor"
+            android:gravity="left"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/blue_end">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blacklist"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/blue_end"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/notifintro"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="Notifications"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="ripple.json"
+                    app:lottie_loop="true" />
+
+                <ImageView
+                    android:id="@+id/view_profile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="viewProfile"
+                    android:src="@drawable/profile" />
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="viewCart"
+                    android:src="@drawable/cart" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:auto_cycle="true"
+                app:pager_animation="Default"
+                app:pager_animation_span="1100" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/blue_end" />
+
+            <TextView
+                android:id="@+id/category_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:text="Category :"
+                android:textColor="@color/blue_end"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/blue_end" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="20dp">>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <!--                        android:onClick="cardsActivity"-->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/chairs"
+                        style="@style/homegridcard"
+                        app:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/chairs_img"
+                                style="@style/homegridimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/chair" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/chairs_img"
+                                android:background="@drawable/category_card_gradient_style"
+                                android:text="Chairs"
+                                android:textColor="@color/whiteTextColor" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/beds"
+                        style="@style/homegridcard"
+                        android:onClick="onClick"
+                        app:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/beds_img"
+                                style="@style/homegridimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/bed_img" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/beds_img"
+                                android:background="@drawable/category_card_gradient_style"
+                                android:text="Beds"
+                                android:textColor="@color/whiteTextColor" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sofa"
+                        style="@style/homegridcard"
+                        android:onClick="onClick"
+                        app:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/sofa_img"
+                                style="@style/homegridimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/sofa_img" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/sofa_img"
+                                android:background="@drawable/category_card_gradient_style"
+                                android:text="Sofa"
+                                android:textColor="@color/whiteTextColor" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/couch"
+                        style="@style/homegridcard"
+                        android:onClick="onClick"
+                        app:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/couch_img"
+                                style="@style/homegridimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/couch_img" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/couch_img"
+                                android:background="@drawable/category_card_gradient_style"
+                                android:text="Couch"
+                                android:textColor="@color/whiteTextColor" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/desks"
+                        style="@style/homegridcard"
+                        android:clickable="true"
+                        android:onClick="onClick"
+                        app:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/desks_img"
+                                style="@style/homegridimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/desk_img" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/desks_img"
+                                android:background="@drawable/category_card_gradient_style"
+                                android:text="Desks"
+                                android:textColor="@color/whiteTextColor" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tables"
+                        style="@style/homegridcard"
+                        android:onClick="onClick"
+                        app:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/tables_img"
+                                style="@style/homegridimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:src="@drawable/table_img" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/tables_img"
+                                android:background="@drawable/category_card_gradient_style"
+                                android:text="Tables"
+                                android:textColor="@color/whiteTextColor" />
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:weightSum="10">-->
+
+                <!--                    <androidx.cardview.widget.CardView-->
+                <!--                        style="@style/homegridcard"-->
+                <!--                        app:cardCornerRadius="@dimen/card_album_radius">-->
+                <!--                        &lt;!&ndash;                            android:onClick="bagsActivity">&ndash;&gt;-->
+
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="match_parent">-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/Sofa2"-->
+                <!--                                style="@style/homegridimage"-->
+                <!--                                android:src="@drawable/chair" />-->
+
+                <!--                            <TextView-->
+                <!--                                style="@style/homegridtext"-->
+                <!--                                android:layout_below="@id/Sofa2"-->
+                <!--                                android:text="Sofa" />-->
+
+                <!--                        </RelativeLayout>-->
+
+                <!--                    </androidx.cardview.widget.CardView>-->
+
+                <!--                    <androidx.cardview.widget.CardView-->
+                <!--                        style="@style/homegridcard"-->
+                <!--                        app:cardCornerRadius="@dimen/card_album_radius">-->
+                <!--                        &lt;!&ndash;                            android:onClick="stationaryAcitivity">&ndash;&gt;-->
+
+                <!--                        <RelativeLayout-->
+                <!--                            android:layout_width="match_parent"-->
+                <!--                            android:layout_height="match_parent">-->
+
+                <!--                            <ImageView-->
+                <!--                                android:id="@+id/couch2"-->
+                <!--                                style="@style/homegridimage"-->
+                <!--                                android:src="@drawable/chair" />-->
+
+                <!--                            <TextView-->
+                <!--                                style="@style/homegridtext"-->
+                <!--                                android:layout_below="@id/couch2"-->
+                <!--                                android:text="Couch" />-->
+
+                <!--                        </RelativeLayout>-->
+                <!--                    </androidx.cardview.widget.CardView>-->
+
+                <!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+
+            <!--                <LinearLayout-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:background="#34495e"-->
+            <!--                    android:padding="10dp"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="10dp"-->
+            <!--                    android:weightSum="10">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:gravity="left"-->
+            <!--                        android:padding="5dp"-->
+            <!--                        style="@style/headingfonts"-->
+            <!--                        android:textColor="#bdc3c7"-->
+            <!--                        android:text="We are best at"-->
+            <!--                        android:layout_weight="3"/>-->
+
+            <!--                    <com.tomer.fadingtextview.FadingTextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:textColor="#ecf0f1"-->
+            <!--                        app:timeout="500"-->
+            <!--                        style="@style/headingfonts"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:layout_height="match_parent"-->
+            <!--                        app:texts="@array/examples"-->
+            <!--                        android:layout_weight="7"/>-->
+
+            <!--                </LinearLayout>-->
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

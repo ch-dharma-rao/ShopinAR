@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Wishlist">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/whiteTextColor"
+            android:gravity="left"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/blue_end">
+
+            <TextView
+                android:id="@+id/wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="@string/wishlist"
+                android:textColor="@color/blue_end"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/notification"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="Notifications"/>
+                <!--                android:onClick="viewProfile"/>-->
+
+                <ImageView
+                    android:id="@+id/view_profile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="viewProfile"/>
+                <!--                android:onClick="viewCart"/>-->
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="5dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wishlist_items"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+    <!--        android:id="@+id/no_item"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginLeft="5dp"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:layout_marginRight="5dp"-->
+    <!--        app:lottie_autoPlay="true"-->
+    <!--        app:lottie_fileName="loading_cloud.json"-->
+<!--    app:lottie_loop="true" />-->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/empty_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        android:src="@drawable/cartempty"
+        android:visibility="invisible"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="empty_box.json"
+        app:lottie_loop="true" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

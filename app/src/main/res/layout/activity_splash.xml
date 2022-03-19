@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/shopin_ar_logo" />
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/blacklist"
+            android:text="@string/app_name"
+            android:textColor="@color/register_bk_color"
+            android:textSize="50sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/developer_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/appname"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:fontFamily="@font/nunito_regular"-->
+<!--            android:text="Made by : CH Dharma Rao"-->
+<!--            android:textColor="@color/register_bk_color"-->
+<!--            android:textSize="10sp" />-->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

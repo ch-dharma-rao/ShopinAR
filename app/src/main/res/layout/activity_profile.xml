@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/whiteTextColor"
+            android:gravity="left"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleTextColor="@color/blue_end">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blacklist"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/blue_end"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+<!--                <com.airbnb.lottie.LottieAnimationView-->
+<!--                    android:id="@+id/notifintro"-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    app:lottie_autoPlay="true"-->
+<!--                    app:lottie_fileName="ripple.json"-->
+<!--                    app:lottie_loop="true" />-->
+
+                <!--                android:onClick="Notifications"/>-->
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/notification"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="Notifications"/>
+
+
+                <!--                android:onClick="viewProfile"/>-->
+
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cart"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="viewCart"/>
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/updatedetails"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="10dp"-->
+<!--                    android:text="Update"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:textAllCaps="true"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:background="@drawable/ar_btn_gradient_style"-->
+<!--                    android:textColor="@color/whiteTextColor"/>-->
+                <!--                android:onClick="viewCart"/>-->
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.glide.slider.library.SliderLayout
+                    android:id="@+id/slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:auto_cycle="true"
+                    app:pager_animation="ZoomOut"
+                    app:pager_animation_span="1100" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilepic"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:elevation="10dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginLeft="30dp"
+                    app:civ_border_color="@color/whiteTextColor"
+                    app:civ_border_width="5dp"
+                    android:src="@drawable/default_profile"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/name_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_toRightOf="@+id/profilepic"
+                    android:elevation="5dp"
+                    android:text="Username"
+                    android:textColor="@color/whiteTextColor"
+                    android:layout_marginTop="220dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/category_card_gradient_style"
+                    android:layout_marginLeft="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"/>
+
+            </RelativeLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_xsmall"
+                android:background="@color/grey_light"
+                android:layout_marginTop="30dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/gmail"/>
+
+                <TextView
+                    android:id="@+id/emailview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    style="@style/fonts"
+                    android:textColor="#424242"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/grey_light"
+                android:layout_marginTop="2dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/smartphone"/>
+
+                <TextView
+                    android:id="@+id/mobileview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    style="@style/fonts"
+                    android:textColor="#424242"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/grey_light"
+                android:layout_marginTop="2dp"/>
+
+            <LinearLayout
+                android:id="@+id/addressview"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/agenda"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    style="@style/fonts"
+                    android:layout_weight="0.9"
+                    android:text="My Wishlist"
+                    android:textColor="#424242"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/right_arrow"/>
+
+            </LinearLayout>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="@dimen/view_width_small"
+                android:background="@color/grey_light"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"/>
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progress_bar"-->
+<!--                style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_above="@+id/button_upload"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:layout_margin= "20dp" />-->
+
+
+            <!--Update User Details-->
+
+            <Button
+                android:id="@+id/updatedetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="50dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_gradient_style"
+                android:text="@string/update"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

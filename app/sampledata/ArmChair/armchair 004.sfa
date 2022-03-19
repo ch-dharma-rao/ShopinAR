@@ -1,0 +1,42 @@
+{
+  materials: [
+    {
+      name: '01___Default',
+      parameters: [
+        {
+          baseColor: null,
+        },
+        {
+          baseColorTint: [
+            0.58819999999999995,
+            0.58819999999999995,
+            0.58819999999999995,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.408248,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/ArmChair/armchair 004.obj',
+    name: 'armchair 004',
+    recenter: 'root',
+    scale: 0.033555000000000001,
+  },
+  version: '0.54:2',
+}

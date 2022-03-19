@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Shopin AR</string>
+
+    <!--    Welcome Screen  -->
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Get Started</string>
+
+    <string name="slide_1_title">Exclusive Products</string>
+    <string name="slide_1_desc">Get products which are unique and only available at our shops !</string>
+    <string name="slide_1_anim">exclusive-products.json</string>
+
+    <string name="slide_2_title">Cheap Rates</string>
+    <string name="slide_2_desc">Products at such an affordable rates !</string>
+    <string name="slide_2_anim">cheap_price.json</string>
+
+    <string name="slide_3_title">Hassle Free Payments</string>
+    <string name="slide_3_desc">With various pay options , you can easily pay in a minute !</string>
+    <string name="slide_3_anim">payments.json</string>
+
+    <string name="slide_4_title">Fast Delivery</string>
+    <string name="slide_4_desc">Blazing fast order delivery within time !</string>
+    <string name="slide_4_anim">fast_delivery.json</string>
+
+    <string name="slide_5_title">Preview Products</string>
+    <string name="slide_5_desc">Augmented Reality allows to preview products before buying. !</string>
+    <string name="slide_5_anim">augmented_reality.json</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <!--Login and Register-->
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_confirm_password_hint">Confirm Password</string>
+
+    <string name="login">Login</string>
+    <string name="already_mem">Already \nhave an \nAccount?</string>
+    <string name="register_now">New user? Register Now</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+    <string name="registermail1">\n This is CH Dharma Rao , CEO of Shopin AR ! \n\nWelcome onboard with us on behalf of our team !\n
+    We promise to provide unforgettable shopping experience to you in future ! \n\n
+    So What are you waiting for , start shopping and get best of our products right at your doorstep !
+    \n\n
+    We are happy to help you ! In case of any query contact us at our handles mentioned below !\n\n
+    Phone : +91-7878787878\n
+    Email : dharmaraoofficial123@gmail.com\n
+    Address : 424 Lorem Ipsum , Bhilai , Chhattisgarh ( 474747 )</string>
+
+    <!--Navigation drawer items-->
+    <string name="home">Home</string>
+    <string name="myprofile">Profile</string>
+    <string name="myorders">My Orders</string>
+    <string name="cart">Cart</string>
+    <string name="logout">Logout</string>
+    <string name="feedback">Feedback</string>
+    <string name="aboutapp">About App</string>
+    <string name="rate">Rate Us</string>
+    <string name="helpcentre">Help Center</string>
+    <string name="help">In case of any query feel free to reach us at : \n    beingdev.com@gmail.com\n\nYou can also Call us at our helpline numbers : \n     +91-9291299322 \n     +91-8732883291</string>
+    <string name="magic_points">Magic Points</string>
+    <string name="orders_placed">Orders Placed</string>
+    <string name="items_incart">Items inCart</string>
+    <string name="my_profile">My Profile</string>
+    <string name="update_details">Update Details</string>
+    <string name="update">Update</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="back">Back</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="category">Category</string>
+    <string name="description_demo">The High Back Executive Chair is the new option for the manager or CEO. The executive chair also comes with a Synchronized Tilt which allows you to lean back into the chair and also help with stretching while sitting for long periods of time.</string>
+    <string name="notification">Notificaton</string>
+
+    <string name="resizable">Resizable</string>
+    <string name="scene_viewer_settings">Scene Viewer Settings</string>
+    <string name="duck">Duck</string>
+    <string name="robot">Robot (animated)</string>
+    <string name="choose_3d_model">3D model:</string>
+    <string name="choose_mode">Mode:</string>
+    <string name="show_with_scene_viewer">Show with Scene Viewer</string>
+    <string name="display_title">Display title</string>
+    <string name="display_link">Display link</string>
+    <string name="none">none</string>
+    <string name="ar_only">ar_only</string>
+    <string name="ar_preferred">ar_preferred</string>
+<!--    <string name="choose_3d_model">Choose 3d model</string>-->
+<!--    <string name="duck">Duck</string>-->
+<!--    <string name="robot">RObot</string>-->
+<!--    <string name="display_title">Display Title</string>-->
+</resources>

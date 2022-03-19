@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@drawable/about_bg_gradient_style">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/developerPhoto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:elevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            app:civ_border_color="@color/whiteTextColor"
+            app:civ_border_width="5dp"
+            android:src="@drawable/developer"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:src="@drawable/developer"-->
+<!--            android:id="@+id/developerPhoto"-->
+<!--            />-->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@+id/developerPhoto"
+            app:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/blue_end" />
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:text="About"
+                android:fontFamily="@font/puppins_medium"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/about_title"
+                android:background="@color/blue_end" />
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/about_title"
+                android:padding="12dp"
+                android:layout_margin="16dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:text="This app was made by CH Dharma Rao as\n part of Final Year Project.\n\nApp version: 0.2"/>
+            android:textSize="14sp" />
+        </RelativeLayout>
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="50dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_below="@+id/developerPhoto"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:fontFamily="@font/nunito_regular"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/whiteTextColor"-->
+<!--            android:text="This app was made by CH Dharma Rao as\n part of Final Year Project.\n\nApp version: 0.2"/>-->
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

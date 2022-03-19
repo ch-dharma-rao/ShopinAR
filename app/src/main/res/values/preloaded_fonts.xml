@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aref_ruqaa</item>
+        <item>@font/aref_ruqaa_bold</item>
+        <item>@font/belleza</item>
+        <item>@font/bubblegum_sans</item>
+        <item>@font/macondo</item>
+        <item>@font/macondo_swash_caps</item>
+        <item>@font/paprika</item>
+        <item>@font/reem_kufi</item>
+        <item>@font/vampiro_one</item>
+    </array>
+</resources>

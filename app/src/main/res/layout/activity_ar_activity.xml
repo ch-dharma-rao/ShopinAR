@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ARactivity">
+
+
+    <fragment
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/downloadProgress"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="0.0 %"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/downloadProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="150dp"
+        android:progressDrawable="@drawable/progress_bar_drawable" />
+
+
+    <TextView
+        android:id="@+id/textBuildProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buildProgress"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Build in progress"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:id="@+id/buildProgress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="65"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/circular_progress_bar" />
+
+    <!--    <com.daimajia.numberprogressbar.NumberProgressBar-->
+    <!--        android:id="@+id/downloadProgress"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--         android:layout_height="40dp"-->
+    <!--        android:padding="30dp"-->
+    <!--        -->
+    <!--        android:layout_marginBottom="150dp"-->
+    <!--        android:layout_marginHorizontal="40dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        app:progress_reached_color="@color/white"-->
+    <!--        app:progress_unreached_bar_height="1.75dp"-->
+    <!--        app:progress_reached_bar_height="2.5dp"-->
+    <!--        android:background="@color/blue_end"-->
+    <!--        app:progress_text_size="20sp"-->
+    <!--            app:progress_text_color="@color/white"-->
+    <!--        app:progress_text_offset="1dp"-->
+    <!--        app:progress_text_visibility="visible"-->
+    <!--    />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/downloadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:elevation="6dp"
+        android:src="@drawable/download_file"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp"
+        app:useCompatPadding="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:elevation="6dp"
+        android:src="@drawable/delete_off"
+        app:layout_anchorGravity="bottom|left|end"
+        app:pressedTranslationZ="12dp"
+        app:useCompatPadding="true" />
+</RelativeLayout>
