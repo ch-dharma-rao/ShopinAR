@@ -15,3 +15,11 @@ Tools and Technologies :
 * ARCore Scenefrom Plugin (deprecated ,but available in Android Studio 4.0)
 * Java,
 * Kotlin
+
+
+<img align="left" src="https://github.com/ch-dharma-rao/ShopinAR/blob/main/shopinar-demo-1.gif" width="270" height="480" />
+
+
+
+<img align="left" src="https://github.com/ch-dharma-rao/ShopinAR/blob/main/shopinar-demo-1.gif" width="270" height="480" />
+
