@@ -21,9 +21,9 @@ Tools and Technologies :
 | <img src="/shopinar-demo-1.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| <img src="/shopinar-demo-3.gif" width="270" />|
 
 
-|Augmented Reality|
+|View Products in Augmented Reality|
 |-----------------|
-|Welcome Screen                                 |Login and Signup                               |Home
-|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| <img src="/shopinar-demo-1.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| <img src="/shopinar-demo-3.gif" width="270" />|
+|Rotate and Scale Products                                 |360° View ,Move ,Add and Delete Products                              |
+|-----------------------------------------------|-----------------------------------------------|
+| <img src="/shopinar-demo-4.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| |
 
