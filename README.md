@@ -18,16 +18,26 @@ Tools and Technologies :
 
 <br>
 
+Youtube Video link : [Video Demo](https://www.youtube.com/watch?v=fJE50CDc4HU&ab_channel=CHDharmaRao)
+
 ## Demo 
+__UI__
+
 
 |Welcome Screen                                 |Login and Signup                               |Home
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | <img src="/shopinar-demo-1.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| <img src="/shopinar-demo-3.gif" width="270" />|
 
 
-###### View Products in Augmented Reality
+__View Products in Augmented Reality__
 
 |Rotate and Scale Products                                 |360° View ,Move ,Add and Delete Products                              |  
 |---|---|
 | <img src="/shopinar-demo-4.gif" width="270" />| <img src="/shopinar-demo-5.gif" width="270" />| |
 
+
+__UI__
+
+|Product Description                                |My Cart,User Info,Notification,Wishlist and About                              |  
+|---|---|
+| <img src="/shopinar-demo-6.gif" width="270" />| <img src="/shopinar-demo-7.gif" width="270" />| |
