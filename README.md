@@ -22,6 +22,7 @@ Tools and Technologies :
 
 
 |Augmented Reality|
+|-----------------|
 |Welcome Screen                                 |Login and Signup                               |Home
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | <img src="/shopinar-demo-1.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| <img src="/shopinar-demo-3.gif" width="270" />|
