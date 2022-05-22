@@ -2,7 +2,7 @@
 
 
 
-Shopin-AR 
+Shopin-Augmented Reality <br>
 ( Final Year Project )
 
 AR-based E-commerce App that gives customers a real-time glimpse of what a product will look like when placed in their own environment and can interact with the product, see it from different angles, evaluate the texture, or place it in their room.
