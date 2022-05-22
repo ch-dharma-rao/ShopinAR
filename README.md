@@ -13,7 +13,7 @@ Tools and Technologies :
 * Android Studio 4.0 (2020 version)
 * Firebase
 * ARCore Scenefrom Plugin (deprecated ,but available in Android Studio 4.0)
-* Java,
+* Java
 * Kotlin
 
 |Welcome Screen                                 |Login and Signup                               |Home
@@ -21,7 +21,7 @@ Tools and Technologies :
 | <img src="/shopinar-demo-1.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| <img src="/shopinar-demo-3.gif" width="270" />|
 
 
-View Products in Augmented Reality
+###### View Products in Augmented Reality
 
 |Rotate and Scale Products                                 |360° View ,Move ,Add and Delete Products                              |  
 |---|---|
