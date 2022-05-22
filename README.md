@@ -10,8 +10,8 @@ AR-based E-commerce App that gives customers a real-time glimpse of what a produ
 To decrease the product return rates and enhance the shopping experience and offer a new take on how retailers engage customers.
 
 Tools and Technologies : 
--Android Studio 4.0 (2020 version)
--Firebase
--ARCore Scenefrom Plugin (deprecated ,but available in Android Studio 4.0)
--Java,
--Kotlin
+*Android Studio 4.0 (2020 version)
+*Firebase
+*ARCore Scenefrom Plugin (deprecated ,but available in Android Studio 4.0)
+*Java,
+*Kotlin
