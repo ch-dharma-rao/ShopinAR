@@ -16,12 +16,7 @@ Tools and Technologies :
 * Java,
 * Kotlin
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](<img align="left" src="https://github.com/ch-dharma-rao/ShopinAR/blob/main/shopinar-demo-1.gif" width="270" height="480" />)  |  ![](https://...Ocean.png)
-
-
-
-
-<img align="left" src="https://github.com/ch-dharma-rao/ShopinAR/blob/main/shopinar-demo-1.gif" width="270" height="480" />
+|Welcome Screen| Login and Signup|
+|--------------|-----------------|
+|<img align="left" src="https://github.com/ch-dharma-rao/ShopinAR/blob/main/shopinar-demo-1.gif" width="270" height="480" />|<img align="left" src="https://github.com/ch-dharma-rao/ShopinAR/blob/main/shopinar-demo-1.gif" width="270" height="480" />|
 
