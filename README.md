@@ -23,6 +23,6 @@ Tools and Technologies :
 
 |View Products in Augmented Reality|
 |---------------------------------------------------------------------------------------------------------------------------------|
-|Rotate and Scale Products                                 |360° View ,Move ,Add and Delete Products                              |
+||Rotate and Scale Products                                 |360° View ,Move ,Add and Delete Products                              ||
 <!-- | <img src="/shopinar-demo-4.gif" width="270" />| <img src="/shopinar-demo-2.gif" width="270" />| | -->
 
